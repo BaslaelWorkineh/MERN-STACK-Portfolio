@@ -1,0 +1,557 @@
+:root{
+    --total-brand: 19;
+    --logo-width: 12rem;
+    --total-logo-width: calc(var(--total-brand) * var(--logo-width) *2);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #f2f2f2, #bfc5ca, #daf4ff); /* Adjust colors as needed */
+    overflow-x: hidden;
+}
+
+/* Customize scrollbar for the body */
+body {
+    overflow-y: scroll; /* Enable vertical scrollbar */
+}
+
+/* Customize scrollbar */
+body::-webkit-scrollbar {
+    width: 5px; /* Set width of the scrollbar */
+    border-radius: 10px; /* Set border radius to make it round */
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: #3c3c3c; /* Set track background color */
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #ff4c4c; /* Set thumb color */
+    border-radius: 10px; /* Set thumb border radius */
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set thumb color on hover */
+}
+
+
+.LandingPage {
+    display: flex; /* Use flexbox layout */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Set height to 100% of the viewport height */
+}
+
+.LandingBtns{
+    display: flex;
+    gap: 2vw;
+}
+.LandingPage .IntroHone{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: -9%;
+    font-size: 2.8vw;
+    color: rgb(255, 99, 51);
+}
+.LandingPage h1 {
+    font-family: 'Arial', sans-serif; /* Specify the font family */
+    font-size: 2.6vw; /* Set the font size */
+    font-weight: bold; /* Set the font weight to bold */
+    color: #535353; /* Set the text color */
+     /* Center-align the text */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Add letter spacing for visual appeal */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+    margin-top: -5%; /* Add some space below the heading */
+    position: absolute;
+}
+.LandingPage p {
+    font-family: 'Helvetica', sans-serif; /* Specify the font family */
+    font-size: 1vw; /* Set the font size */
+    line-height: 1.6; /* Set the line height for better readability */
+    color: #666; /* Set the text color */
+    text-align: justify; /* Justify-align the text */
+    margin-bottom: 20px; /* Add some space below the paragraph */
+}
+
+.LandingBtns .hiremeBtn {
+    width: 10vw;
+    height: 3.5vw;
+    display: inline-block;
+    padding: .5vw 1vw;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: .2vw;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -webkit-linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -moz-linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -o-linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -ms-linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0px .1vw .5vw rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.LandingBtns .hiremeBtn:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -webkit-linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -moz-linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -o-linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -ms-linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.LandingBtns .cvBtn {
+    width: 10vw;
+    height: 3.5vw;
+    display: inline-block;
+    padding: .5vw 1vw;
+    font-size: 1vw;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border:none;
+    border-radius: .2vw;
+    cursor: pointer;
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -webkit-linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -moz-linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -o-linear-gradient(135deg, #ff416c, #ff4b2b);
+    background: -ms-linear-gradient(135deg, #ff416c, #ff4b2b);
+    box-shadow: 0px .1vw .5vw rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease-in-out;
+}
+
+.LandingBtns .cvBtn:hover {
+    background: linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -webkit-linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -moz-linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -o-linear-gradient(135deg, #ff4b2b, #ff416c);
+    background: -ms-linear-gradient(135deg, #ff4b2b, #ff416c);
+}
+
+.profilePic{
+ margin-left: 5vw;
+ margin-top: -7%;
+ z-index: 20;
+}
+
+.profilePic img {
+    
+    border-radius: 50%; /* Ensures the image is round */
+    width: 25vw;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
+    border: 3px solid #ffffff; /* Adds a white border around the image */
+    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
+}
+
+/* Add a hover effect */
+.profilePic img:hover {
+    transform: scale(1.1); /* Enlarges the image slightly on hover */
+}
+
+
+
+.skillSection {
+    margin-top: -15rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+}
+
+
+
+.slider{
+    position: relative;
+    width: 50%;
+    height: 12rem;
+    background-color: rgba(255, 255, 255, 0);
+
+    box-shadow: 0 .8rem 1.4rem -2rem #0001;
+    display: flex;
+    align-items: center;
+    
+
+    overflow: hidden;
+}
+
+.slider::before,
+.slider::after{
+    position: absolute;
+    content: "";
+    z-index: 10;
+    height: 100%;
+    width: 10%;
+}
+
+.slider::before{
+    border-radius: 30%;
+    left: 0;
+    background: linear-gradient(to right, #bfc5ca 0%, #fff0 100%);
+}
+
+.slider::after{
+    border-radius: 30%;
+    right: 0;
+    background: linear-gradient(to left, #bfc5ca 0%, #fff0 100%);
+}
+
+
+.slider ul.brands {
+    list-style: none;
+
+    width: 100%;
+
+    display: flex;
+    gap: 6px;
+
+    animation: slideLeft 16s linear infinite;
+}
+
+@keyframes slideLeft {
+    100%{
+        transform: translateX(calc(-100%));
+    }
+}
+
+
+ul.brands li.brand-logo img{
+    height: 6rem;
+    width: 12rem;
+    font-size: 3rem;
+    text-align: center;
+    margin-left: 3rem;
+    border: #535353;
+    border-style:dotted;
+}
+
+.test{ 
+    padding: 15px 9%;
+    padding-bottom: 200px;
+}
+
+.test .heading{
+    text-align: center;
+    padding-bottom: 15px;
+    color: #000000;
+    text-shadow: 0 5px 10px rgba(0,0,0,.2);
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.test .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 15px;
+    padding-bottom: 20px;
+}
+
+.test .box-container .box {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.418); /* Increased box shadow for depth */
+    border-radius: 10px; /* Rounded corners for a softer look */
+    background-color: #f9f9f97b; /* Light background color */
+    text-align: center;
+    padding: 40px 30px; /* Increased padding for more space */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    backdrop-filter: blur(10x);
+}
+
+.test .box-container .box:hover {
+    transform: translateY(-5px); /* Move the card slightly upwards on hover */
+}
+
+/* Add additional styles for the content inside the card if needed */
+.test .box-container .box h1 {
+    color: #333; /* Darker text color */
+    font-size: 24px; /* Larger font size for headings */
+    margin-bottom: 20px; /* Increased margin below the heading */
+}
+
+.test .box-container .box p {
+    color: #666; /* Slightly darker text color */
+    font-size: 16px; /* Smaller font size for paragraphs */
+}
+
+
+.test .box-container .box img{
+    height: 150px;
+    width: 300px;
+}
+
+
+.test .box-container .box button{
+    margin-top: 10px;
+    display: inline-block;
+    background: #333;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px 25px;
+    color: white;
+}
+
+.project-Description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 4px solid black;
+    border-radius: 10px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.816);
+    backdrop-filter: blur(20px);
+    width: 90vw;
+    height: 90vh;
+    max-width: 80%;
+    transition: 200ms ease-in-out;
+    display: none;
+    overflow: auto;
+}
+
+/* Customize scrollbar */
+.project-Description::-webkit-scrollbar {
+    width: 5px; /* Set width of the scrollbar */
+    border-radius: 10px; /* Set border radius to make it round */
+}
+
+/* Track */
+.project-Description::-webkit-scrollbar-track {
+    background: #434343; /* Set track background color */
+    border-radius: 20px;
+}
+
+/* Handle */
+.project-Description::-webkit-scrollbar-thumb {
+    background: #ff4c4c; /* Set thumb color */
+    border-radius: 10px; /* Set thumb border radius */
+
+}
+
+/* Handle on hover */
+.project-Description::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Set thumb color on hover */
+}
+.project-Description-Media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-Description-Media img {
+    max-width: 33%;
+    height: auto;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.project-Description-Header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid;
+    font-family: 'Roboto', sans-serif; /* Example custom font */
+}
+
+.project-Description-Header .title {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.project-Description-Header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif; /* Example custom font */
+}
+
+.project-Description-body{
+    padding: 20px 15px 10px 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Example custom font */
+    font-size: 20px;
+    text-align: justify;
+    
+}
+
+#overlay{
+    position: fixed;
+    top:0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    z-index: 20;
+    transition: 200ms ease-in-out;
+    pointer-events: all;
+    opacity: 1;
+    display: none;
+}
+
+.project-Description .instructions{
+    font-size: 19px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+.copy-text{
+
+    position: relative;
+    padding: 10px;
+    background-color: #313131;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    
+}
+.copy-text input{
+     background-color: #313131;
+     width: 100%;
+}
+.copy-text input.text{
+    padding: 10px;
+    font-size: 20px;
+    color: #ebebeb;
+    border: none;
+    outline: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.copy-text button{
+    padding: 10px;
+    background: #5784f5;
+    color:#fff;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.copy-text button:active{
+    background: #809ce2;
+}
+
+.copy-text button:before{
+    content: "Copied";
+    position: absolute;
+    top: -50px;
+    right: 0px;
+    background: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    display: none;
+}
+
+.copy-text button:after{
+    content: "";
+    position: absolute;
+    top: -20px;
+    right: 25px;
+    width: 10px;
+    height: 10px;
+    background: #5c81dc;
+    transform:rotate(45deg);
+    display:none;
+}
+.copy-text.active button:before,
+.copy-text.active button::after{
+    display: block;
+}
+.closeBtn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffffff;
+    border: 3px double rgb(74, 74, 74);
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: linear-gradient(to right, #FF6B6B, #FF8E53);
+    transition: background-color 0.3s ease;
+    margin-left: 94%;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.closeBtn:hover {
+    background-image: linear-gradient(to right, #FF8E53, #FF6B6B);
+    border-radius: 0px;
+}
+
+
+
+@media(max-width: 800px) {
+    .LandingPage{
+     align-content: center;
+    }
+    .LandingPageValues{
+     display: grid;
+     justify-items: center;
+    }
+    .LandingPage h1{
+     font-size: 20px;
+    }
+    .LandingPage p{
+     margin-top: 20px;
+     font-size: 14px;
+     margin-left: 20px;
+    }   
+     .LandingPage .IntroHone{
+         margin-top: -15vw;
+         font-size: 25px;
+     }
+     .slider{
+         margin-top: 70px;
+         width: 100%;
+     }
+     .LandingBtns{
+         display: grid;
+         place-items: center;
+        
+     }
+     .LandingBtns .hiremeBtn{
+     width: 80vw;
+     height: 70px;
+     font-size: 5vw;
+     }
+     .LandingBtns .cvBtn{
+         width: 80vw;
+         height: 70px;
+         margin-top: 1vw;
+         font-size: 5vw;
+     }
+ 
+     .profilePic img {
+         display: none;
+     }
+     
+     /* Add a hover effect */
+     .profilePic img:hover {
+         transform: scale(1.1); /* Enlarges the image slightly on hover */
+     }
+     .projectList .projectContainer {
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .test{
+        padding: 20px;
+     }
+     .test .box-container{
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+     }
+ }
+ @media(max-width: 400px) {
+     .projectList .projectContainer {
+         grid-template-columns: repeat(1, 1fr);
+     }
+ }
