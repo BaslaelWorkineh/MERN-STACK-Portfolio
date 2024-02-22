@@ -20,13 +20,7 @@ const DropdownMenu = () => {
     
 
 
-    // const searchbarcontainer = document.querySelectorAll('.search-bar-container');
-    // const searchbarset = document.querySelectorAll('.dropdownSet');
-    // const searchbarcatagorybutton = document.querySelectorAll('.dropdown-content button');
-    // const searchbarinput = document.querySelectorAll('.onlysearch input');
-
-
-    // const hotTopicsContainer = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer');
+   
     // const hotTopicsTitle = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer .articlesbox .articlecontent h3');
     // const hotTopicsbody = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer .articlesbox .articlecontent p');
     // const hotTopicsbutton = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer .articlesbox .articlecontent .articleLearnMoreBtn');
