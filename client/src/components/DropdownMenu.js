@@ -23,21 +23,6 @@ const DropdownMenu = () => {
     if (option === 'Light') {
 
 
-    
-      // bg.style.background = 'linear-gradient(to bottom,  #ffffff, #ffc2c2)';
-      // changingTexts.forEach(elem => elem.style.color = '#535353');
-      // introParas.forEach(elem => elem.style.color = '#666');
-      // headings.forEach(elem => elem.style.color = '#000000');
-      // boxtitles.forEach(elem => elem.style.color = '#333');
-      // box.forEach(elem => elem.style.background = '#f9f9f97b');
-      // boxdescriptions.forEach(elem => elem.style.color = '#333');
-      // projectDescriptions.forEach(elem =>  elem.style.background = 'rgba(255,255,255,0.816)');
-      // projectDescriptionTitles.forEach(elem => elem.style.color = '#000000');
-      // projectDescriptionbodies.forEach(elem => elem.style.color = '#000000');
-      // projectDescriptioninstructions.forEach(elem => elem.style.color = '#000000');
-      // projectDescriptioncopyText.forEach(elem => elem.style.background = '#313131');
-      // projectDescriptioninputs.forEach(elem => elem.style.background = '#313131');
-      // projectDescriptioninputsText.forEach(elem => elem.style.color = '#ebebeb');
 
       // hotTopicsContainer.forEach(elem=> elem.style.background = 'linear-gradient(rgb(255, 85, 0), rgb(47, 99, 255)');
       // hotTopicsTitle.forEach(elem => elem.style.color = 'white');
