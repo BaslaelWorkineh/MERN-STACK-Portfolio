@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to bottom,  #ffffff, #ffc2c2);
+}
+.blogcontainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.landingpageBlog {
+    height: 60vh;
+    display: grid;
+    place-items: center;
+    position: relative; /* Added position relative */
+}
+
+.backgroundImage {
+    height: 100%;
+    width: 100%;
+    background-image: url('./Gifs/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    filter: blur(5px) brightness(0.7); /* Adjust blur and brightness values as needed */
+}
+.landingpageContents {
+    z-index: 1; /* Ensure the content is above the background image */
+    text-align: center; /* Center align the content */
+    color: #fff; /* Added text color for better visibility */
+}
+
+.landingpageTitle {
+    margin-top: 20px;
+    font-size: 3vw;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #fff; /* Text color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+    letter-spacing: 2px; /* Adjust letter spacing for better readability */
+}
+
+
+.landingpageBlog p {
+    font-size: 1.4vw;
+    margin-bottom: 20px;
+    color: #a7a7a7; /* Text color */
+    line-height: 1.6; /* Adjust line height for better readability */
+    text-align: center; /* Center align the text */
+    font-weight: 400; /* Adjust font weight */
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Adjust font family */
+    text-align: justify;
+    padding: 40px;
+}
+.landingpageBlog h3{
+    font-size: 1.2vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.tradingview{
+    display: flex;
+}
+
+.tradingviewArticles{
+    width: 100vw;
+    display: grid;
+}
+.tradingviewArticles h1{
+    font-size: 1.3vw;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    text-decoration: underline;
+    padding-left: 20px;
+
+}
+.chart{
+    width: 100vw;
+}
+
+.tradingviewArticles p{
+   
+    font-size: 1vw;
+    font-family: cursive;
+    padding: 20px;
+    text-align: justify;
+}
+
+
+.articlesFirstTitle {
+    font-size: 60px;
+    font-family: cursive;
+    background-image: linear-gradient(#ff5900, #d15c5a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    margin: 0 auto;
+   
+}
+
+.discoverpage {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 20px;
+    padding: 15px 9%;
+    padding-bottom: 200px;
+  }
+  .hottopics{
+    margin: 0 auto;
+    font-size: 44px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+    text-decoration: underline;
+    margin-top: -100px;
+    color: rgb(255, 77, 0);
+}
+
+.hottopicsBox .articlesContainer{
+    background: linear-gradient(rgb(255, 85, 0), rgb(47, 99, 255));
+}
+.hottopicsBox .articlesContainer .articlesbox .articlecontent h3{
+    
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+}
+.hottopicsBox .articlesContainer .articlesbox .articlecontent p{
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.hottopicsBox .articlesContainer .articlesbox .articlecontent .articleLearnMoreBtn{
+    color: #ffbf9d;
+}
+
+@media(max-width: 800px) {
+    .landingpageBlog p {
+        font-size: 12px;
+        line-height: 1.2;
+        margin-top: -40px;
+    }
+    
+    .landingpageBlog h3{
+        font-size: 18px;
+        margin-top: -60px;
+
+    }
+    .landingpageTitle {
+        margin-top: 50px;
+        font-size: 20px;
+    }
+    .tradingview{
+        flex-direction: column;
+    }
+    .tradingviewArticles h1{
+        font-size: 16px;
+    }
+    .tradingviewArticles p{
+        font-size: 12px;
+    }
+    .chart{
+       height: 50vw;
+    }
+    .discoverpage{
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
+    .articlesFirstTitle {
+        font-size: 5vw;
+    }
+}
+
+@media(max-width: 400px) {
+    .chart{
+        height: 100vw;
+    }
+    .discoverpage
+    {
+        grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+    }
+    .articlesFirstTitle {
+        font-size: 30px;
+    }
+}

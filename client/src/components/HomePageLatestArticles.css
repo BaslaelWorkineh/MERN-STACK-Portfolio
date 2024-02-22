@@ -1,0 +1,60 @@
+.latestNewsArticleContainer{
+    display: grid;
+    gap: 20px;
+}
+.latestNewsArticle {
+    position: relative; /* Required for positioning the pseudo-element */
+    padding: 30px;
+    display: grid;
+    border-radius: 5px;
+    border: 1px solid white;
+    height: 250px;
+    overflow: hidden;
+    
+}
+.latestNewsArticle:hover{
+    cursor: pointer;
+}
+
+.latestNewsArticle::before {
+    content: ''; /* Required for pseudo-elements */
+    position: absolute; /* Position relative to the parent */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(55, 55, 55, 0.6); /* Adjust the opacity as needed */
+    border-radius: inherit; /* Inherit border-radius from the parent */
+    transition: 200ms ease;
+}
+.latestNewsArticle:hover::before{
+    background-color: rgba(31, 31, 31, 0.864);
+} 
+
+.latestNewsArticle h1,
+.latestNewsArticle h2,
+.latestNewsArticle p {
+    font-family: 'Times New Roman', Times, serif;
+    color: aliceblue;
+    margin-top: 10px;
+    position: relative; /* Ensure text appears on top of overlay */
+    z-index: 1; /* Ensure text appears on top of overlay */
+}
+
+.latestNewsArticle h1 {
+    font-size: 24px;
+}
+
+.latestNewsArticle h2 {
+    font-size: 17px;
+}
+
+
+@media (max-width: 800px){
+    .latestNewsArticle h2{
+        font-size: 11px;
+    }
+    .latestNewsArticle h1 {
+        font-size: 20px;
+    }
+}
