@@ -19,12 +19,6 @@ const DropdownMenu = () => {
   const handleOptionClick = (option) => {
     
 
-
-   
-    // const hotTopicsTitle = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer .articlesbox .articlecontent h3');
-    // const hotTopicsbody = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer .articlesbox .articlecontent p');
-    // const hotTopicsbutton = document.querySelectorAll('.blogcontainer .hottopicsBox .articlesContainer .articlesbox .articlecontent .articleLearnMoreBtn');
-   
     
     if (option === 'Light') {
 
