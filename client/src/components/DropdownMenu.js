@@ -25,13 +25,6 @@ const DropdownMenu = () => {
       setTheme(option);
     } else if (option === 'Dark') {
 
-    
-
-      
-      // hotTopicsContainer.forEach(elem=> elem.style.background = 'linear-gradient(rgb(255, 85, 0), rgb(47, 99, 255)');
-      // hotTopicsTitle.forEach(elem => elem.style.color = 'white');
-      // hotTopicsbody.forEach(elem => elem.style.color = 'white');
-      // hotTopicsbutton.forEach(elem => elem.style.color = '#ffbf9d');
       setTheme(option);
     }
 
