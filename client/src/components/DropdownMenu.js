@@ -19,11 +19,6 @@ const DropdownMenu = () => {
   const handleOptionClick = (option) => {
     
 
-    // const tradingviewArticleTitle = document.querySelectorAll('.tradingviewArticles h1');
-    // const tradingviewArticlebody = document.querySelectorAll('.tradingviewArticles p');
-    // const discoverpage = document.querySelectorAll('.discoverpage .articlesContainer');
-    // const discoverpagetitle = document.querySelectorAll('.discoverpage  .articlesContainer .articlesbox .articlecontent h3');
-    // const discoverpagebody = document.querySelectorAll('.discoverpage  .articlesContainer .articlesbox .articlecontent p');
 
     // const searchbarcontainer = document.querySelectorAll('.search-bar-container');
     // const searchbarset = document.querySelectorAll('.dropdownSet');
