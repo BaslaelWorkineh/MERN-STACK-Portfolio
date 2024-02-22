@@ -23,12 +23,7 @@ const DropdownMenu = () => {
     if (option === 'Light') {
 
 
-      // tradingviewArticleTitle.forEach(elem => elem.style.color = 'black');
-      // tradingviewArticlebody.forEach(elem => elem.style.color = '#333');
-      // discoverpage.forEach(elem => elem.style.background = 'linear-gradient(to bottom,  #ffffff, #ffc2c2)')
-      // discoverpagetitle.forEach(elem => elem.style.color = 'black');
-      // discoverpagebody.forEach(elem => elem.style.color = '#333');
-
+    
       // bg.style.background = 'linear-gradient(to bottom,  #ffffff, #ffc2c2)';
       // changingTexts.forEach(elem => elem.style.color = '#535353');
       // introParas.forEach(elem => elem.style.color = '#666');
