@@ -9,7 +9,7 @@ import NotFound from './NotFound';
 import Articles from '../components/Articles';
 import CommentsList from '../components/CommentsList';
 
-const Article = () => {
+const Article = (articles) => {
     const {name} = useParams();
     const article = articleContent.find((article) => article.name === name);
     const [articlesInfo, setArticleInfo] = useState({comments: []});

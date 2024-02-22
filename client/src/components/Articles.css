@@ -1,0 +1,56 @@
+.articlesContainer {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.418);
+    border-radius: 10px;
+    background-color: #f9f9f97b; /* Light background color */
+    text-align: center;
+    padding: 40px 30px;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+    backdrop-filter: blur(10px); /* backdrop-filter for a blurred effect */
+
+    /* Gradient background */
+    background-image: linear-gradient(to bottom right, #ffffff, #ffbfbf);
+}
+
+.articlesContainer:hover {
+    transform: translateY(-5px); /* Move card slightly up on hover for depth effect */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5); /* Increase box shadow on hover for depth effect */
+}
+
+.articlesContainer .articlesbox{
+    display: grid;
+    place-items: center;
+    
+}
+
+.articlesContainer .articlesbox img{
+    height: 35vh;
+    border-radius: 5px;
+    clip-path: polygon(0 0,100% 0, 100% 85%, 0 100%);
+    transition: 200ms;
+    
+}
+
+.articlesContainer .articlesbox img:hover{
+    height: 35vh;
+    border-radius: 5px;
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+    
+}
+
+.articlesContainer .articlesbox .articlecontent h3{
+  
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: underline;
+
+}
+
+.articlesContainer .articlesbox .articlecontent p{
+    text-align: justify;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.articlesContainer .articlesbox .articlecontent .articleLearnMoreBtn{
+    color: rgb(0, 0, 255);
+    font-size: 18px;
+}

@@ -7,10 +7,12 @@ import NotFound from "./pages/NotFound";
 
 //components
 import Navbar from "./components/Navbar";
+import { ThemeProvider } from "./components/ThemeContext";
 
 function App() {
   return (
-    <Router>
+    <ThemeProvider>
+       <Router>
       <Navbar/>
        <div className="max-w-screen-md mx-auto pt-20">
         <Routes>
@@ -22,6 +24,8 @@ function App() {
         </Routes>
       </div>
     </Router>
+    </ThemeProvider>
+   
   );
 }
 

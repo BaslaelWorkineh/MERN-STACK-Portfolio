@@ -1,0 +1,193 @@
+.search-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background: rgb(255, 255, 255);
+  width: 70vw;
+  height: 10vh;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  border: 1px solid black;
+  box-shadow: 2px 2px 2px 2px gray;
+
+}
+.onlysearch{
+  display: flex;
+}
+
+.search-bar-container img {
+  opacity: 1;
+  background-color: #ff4f4f;
+  width: 4vw;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  margin-left: 4px;
+  box-shadow: 2px 2px 2px  gray;
+}
+
+.onlysearch input {
+  background-color: rgb(254, 254, 254);
+  padding: 10px;
+  width: 30vw;
+  height: 7vh;
+  border: 2px solid #ffffff;
+  font-size: 1.25rem;
+  border: 1px solid rgb(54, 53, 53);
+  box-shadow: 2px 2px gray;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.searchbtn{
+  box-shadow: 0px 2px gray;
+  width: 9vw;
+  height: 7vh;
+  background-color: #ff4f4f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dropbtn {
+  box-shadow: 0px 2px gray;
+  width: 9vw;
+  height: 7vh;
+  background-color: #ff4f4f;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.dropdown-content {
+ 
+  border: 2px solid black;
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 160px;
+  z-index: 1;
+  border-radius: 5px;
+  width: 200px;
+  height: 400px;
+  overflow-y: auto;
+}
+
+.dropdown-content::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 10px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+  background: #3c3c3c;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: #ff4c4c;
+  border-radius: 10px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.dropdown-content button {
+  display: block;
+  text-align: left;
+  padding: 8px 12px;
+  background-color: #f9f9f9;
+  color: #000000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.dropdown-content button:hover {
+  background-color: #ff4f4f;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.categorySection {
+  display: flex; /* Corrected class name */
+}
+
+.dropdownSet {
+  box-shadow: 2px 2px gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20vw;
+  height: 7vh;
+  background-color: #ffffff;
+  list-style-type: none;
+  padding: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.dropdownSet li {
+  margin-bottom: 5px;
+  font-size: 24px;
+  font-weight: 900;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+@media(max-width: 800px) {
+  .search-bar-container {
+    flex-direction: column;
+    padding: 1vw;
+    height: 20vh;
+  }
+  .dropdownSet{
+    width: 50vw;
+    
+  }
+  .dropbtn {
+    width: 15vw;
+  }
+  .searchbtn{
+    width: 15vw;
+  }
+  .onlysearch input {
+    width: 50vw;
+  }
+}
+
+
+@media(max-width: 400px) {
+  .search-bar-container {
+    flex-direction: column;
+    height: 20vh;
+    width: 100vw;
+  }
+  .dropdownSet{
+    width: 70vw;
+  }
+  .dropbtn {
+    width: 20vw;
+  }
+  .searchbtn{
+    width: 20vw;
+  }
+  .onlysearch input {
+    width: 70vw;
+  }
+
+}

@@ -10,14 +10,10 @@
     box-sizing: border-box;
 }
 
-body {
-    background: linear-gradient(135deg, #f2f2f2, #bfc5ca, #daf4ff); /* Adjust colors as needed */
-    overflow-x: hidden;
-}
-
 /* Customize scrollbar for the body */
 body {
     overflow-y: scroll; /* Enable vertical scrollbar */
+    overflow-x: hidden;
 }
 
 /* Customize scrollbar */
@@ -64,7 +60,6 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Arial', sans-serif; /* Specify the font family */
     font-size: 2.6vw; /* Set the font size */
     font-weight: bold; /* Set the font weight to bold */
-    color: #535353; /* Set the text color */
      /* Center-align the text */
     text-transform: uppercase; /* Convert text to uppercase */
     letter-spacing: 2px; /* Add letter spacing for visual appeal */
@@ -76,7 +71,6 @@ body::-webkit-scrollbar-thumb:hover {
     font-family: 'Helvetica', sans-serif; /* Specify the font family */
     font-size: 1vw; /* Set the font size */
     line-height: 1.6; /* Set the line height for better readability */
-    color: #666; /* Set the text color */
     text-align: justify; /* Justify-align the text */
     margin-bottom: 20px; /* Add some space below the paragraph */
 }
@@ -185,26 +179,6 @@ body::-webkit-scrollbar-thumb:hover {
     overflow: hidden;
 }
 
-.slider::before,
-.slider::after{
-    position: absolute;
-    content: "";
-    z-index: 10;
-    height: 100%;
-    width: 10%;
-}
-
-.slider::before{
-    border-radius: 30%;
-    left: 0;
-    background: linear-gradient(to right, #bfc5ca 0%, #fff0 100%);
-}
-
-.slider::after{
-    border-radius: 30%;
-    right: 0;
-    background: linear-gradient(to left, #bfc5ca 0%, #fff0 100%);
-}
 
 
 .slider ul.brands {
@@ -237,13 +211,11 @@ ul.brands li.brand-logo img{
 
 .test{ 
     padding: 15px 9%;
-    padding-bottom: 200px;
 }
 
 .test .heading{
     text-align: center;
     padding-bottom: 15px;
-    color: #000000;
     text-shadow: 0 5px 10px rgba(0,0,0,.2);
     font-size: 30px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -259,12 +231,13 @@ ul.brands li.brand-logo img{
 .test .box-container .box {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.418); /* Increased box shadow for depth */
     border-radius: 10px; /* Rounded corners for a softer look */
-    background-color: #f9f9f97b; /* Light background color */
     text-align: center;
     padding: 40px 30px; /* Increased padding for more space */
     transition: transform 0.3s ease; /* Smooth transition on hover */
     cursor: pointer; /* Change cursor to pointer on hover */
     backdrop-filter: blur(10x);
+    display: grid;
+    place-items: center;
 }
 
 .test .box-container .box:hover {
@@ -273,20 +246,22 @@ ul.brands li.brand-logo img{
 
 /* Add additional styles for the content inside the card if needed */
 .test .box-container .box h1 {
-    color: #333; /* Darker text color */
     font-size: 24px; /* Larger font size for headings */
     margin-bottom: 20px; /* Increased margin below the heading */
 }
 
+.test .box-container .box h1 strong{
+    color: rgb(0, 70, 156);
+    font-family:cursive;
+}
+
 .test .box-container .box p {
-    color: #666; /* Slightly darker text color */
     font-size: 16px; /* Smaller font size for paragraphs */
 }
 
 
 .test .box-container .box img{
     height: 150px;
-    width: 300px;
 }
 
 
@@ -308,7 +283,6 @@ ul.brands li.brand-logo img{
     border: 4px solid black;
     border-radius: 10px;
     z-index: 999;
-    background-color: rgba(255, 255, 255, 0.816);
     backdrop-filter: blur(20px);
     width: 90vw;
     height: 90vh;
@@ -388,6 +362,12 @@ ul.brands li.brand-logo img{
     
 }
 
+.project-Description-body .YTVideo {
+    position: relative; /* Ensure positioning context for absolute centering */
+    margin-left: 50%; /* Move the element halfway to the right */
+    transform: translateX(-50%); /* Move the element back by half of its own width */
+}
+
 #overlay{
     position: fixed;
     top:0;
@@ -410,20 +390,17 @@ ul.brands li.brand-logo img{
 
     position: relative;
     padding: 10px;
-    background-color: #313131;
     border: 1px solid #ddd;
     border-radius: 10px;
     display: flex;
     
 }
 .copy-text input{
-     background-color: #313131;
      width: 100%;
 }
 .copy-text input.text{
     padding: 10px;
     font-size: 20px;
-    color: #ebebeb;
     border: none;
     outline: none;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -488,6 +465,113 @@ ul.brands li.brand-logo img{
     background-image: linear-gradient(to right, #FF8E53, #FF6B6B);
     border-radius: 0px;
 }
+.chatbotcontainer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 300px; /* Adjust as needed */
+    margin-right: 400px; /* Adjust as needed */
+    
+    z-index: 30;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: -230px;
+    right: -50px;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.816);
+    backdrop-filter: blur(20px);
+    max-width: 80%;
+    transition: 200ms ease-in-out;
+    display: none;
+}
+.chatbotButton{
+    
+}
+.chatbotButton img {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    transform: translate(-50%, -50%);
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+
+.ourServices{
+    padding: 15px 9%;
+    text-align: center;
+    padding-bottom: 100px;
+    
+}
+.ourServices h1{
+    font-size: 28px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+
+}
+.ourServices p{
+    font-size: 18px;
+    padding-bottom: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+.ourServicesBoxesContainer{
+   display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    gap: 15px;
+    place-items: center;
+}
+.ourServices .ourServicesBox{
+    border: 1px solid black;
+    text-align: center;
+    padding: 40px 30px; /* Increased padding for more space */
+    transition: transform 0.3s ease; /* Smooth transition on hover */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    backdrop-filter: blur(10x);
+    display: grid;
+    place-items: center;
+}
+.ourServices .ourServicesBox img{
+    width: 50px;
+    height: 50px;
+}
+
+.ourServices .ourServicesBox h2{
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-bottom: 20px;
+}
+
+.ourServices .ourServicesBox p{
+    text-align: justify;
+}
+
+
+.latestArticlesHolder{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding-bottom: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.latestArticlesHolder h1{
+    font-size: 28px;
+    font-family: cursive;
+    font-weight: bold;
+}
+.latestArticlesHolder p{
+    text-align: justify;
+}
+
+
+
+
+
 
 
 
@@ -549,9 +633,33 @@ ul.brands li.brand-logo img{
      .test .box-container{
         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
      }
+     .chatbot {
+        bottom: -40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .ourServicesBoxesContainer{
+         grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+         
+     }
+   
+     
  }
  @media(max-width: 400px) {
      .projectList .projectContainer {
          grid-template-columns: repeat(1, 1fr);
      }
+     .ourServicesBoxesContainer{
+        grid-template-columns: repeat(auto-fit, (1, 1fr));
+        
+    }
+  
+     .chatbot {
+        bottom: -30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100vw;
+        height: 82vh;
+
+    }
  }

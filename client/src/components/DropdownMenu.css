@@ -1,0 +1,23 @@
+.dropdown-menu {
+    position: relative;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    display: block;
+   
+  }
+  
+  .dropdown-menu li {
+    padding: 8px 12px;
+    width: 150px;
+  }
+  
+  .dropdown-menu li:hover {
+    background-color: #ff4f4f;
+  }
+  
