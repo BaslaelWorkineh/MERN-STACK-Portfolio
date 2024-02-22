@@ -22,10 +22,6 @@ const DropdownMenu = () => {
     
     if (option === 'Light') {
 
-      // searchbarcontainer.forEach(elem => elem.style.background = 'white');
-      // searchbarset.forEach(elem => {elem.style.background = 'white'; elem.style.color = '#333'});
-      // searchbarinput.forEach(elem => {elem.style.background = 'white'; elem.style.color ='#333'});
-      // searchbarcatagorybutton.forEach(elem => elem.style.background = 'white');
 
       // tradingviewArticleTitle.forEach(elem => elem.style.color = 'black');
       // tradingviewArticlebody.forEach(elem => elem.style.color = '#333');
