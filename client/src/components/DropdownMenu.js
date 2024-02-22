@@ -22,40 +22,10 @@ const DropdownMenu = () => {
     
     if (option === 'Light') {
 
-
-
-      // hotTopicsContainer.forEach(elem=> elem.style.background = 'linear-gradient(rgb(255, 85, 0), rgb(47, 99, 255)');
-      // hotTopicsTitle.forEach(elem => elem.style.color = 'white');
-      // hotTopicsbody.forEach(elem => elem.style.color = 'white');
-      // hotTopicsbutton.forEach(elem => elem.style.color = '#ffbf9d');
       setTheme(option);
     } else if (option === 'Dark') {
 
-      // searchbarcontainer.forEach(elem => elem.style.background = '#333');
-      // searchbarset.forEach(elem => {elem.style.background = '#333'; elem.style.color = 'white'});
-      // searchbarinput.forEach(elem => {elem.style.background = '#333'; elem.style.color ='white'});
-      // searchbarcatagorybutton.forEach(elem => elem.style.background = '#333');
-
-      // tradingviewArticleTitle.forEach(elem => elem.style.color = '#dfdfdf');
-      // tradingviewArticlebody.forEach(elem => elem.style.color = '#bababa');
-      // discoverpage.forEach(elem => elem.style.background = 'linear-gradient(to bottom,  #696969, #231f1f)')
-      // discoverpagetitle.forEach(elem => elem.style.color = 'dfdfdf');
-      // discoverpagebody.forEach(elem => elem.style.color = '#bababa');
-
-      // bg.style.background = '#282727';
-      // changingTexts.forEach(elem => elem.style.color = '#bababa');
-      // introParas.forEach(elem => elem.style.color = '#bababa');
-      // headings.forEach(elem => elem.style.color = '#dfdfdf');
-      // box.forEach(elem => elem.style.background = '#333');
-      // boxtitles.forEach(elem => elem.style.color = '#dfdfdf');
-      // boxdescriptions.forEach(elem => elem.style.color = '#bababa');
-      // projectDescriptions.forEach(elem => elem.style.background = '#333');
-      // projectDescriptionTitles.forEach(elem => elem.style.color = '#ffffff');
-      // projectDescriptionbodies.forEach(elem => elem.style.color = '#ffffff');
-      // projectDescriptioninstructions.forEach(elem => elem.style.color = '#ffffff');
-      // projectDescriptioninputs.forEach(elem => elem.style.background = '#dfdfdf');
-      // projectDescriptioncopyText.forEach(elem => elem.style.background = '#dfdfdf');
-      // projectDescriptioninputsText.forEach(elem => elem.style.color = '#333');
+    
 
       
       // hotTopicsContainer.forEach(elem=> elem.style.background = 'linear-gradient(rgb(255, 85, 0), rgb(47, 99, 255)');
