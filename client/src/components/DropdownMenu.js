@@ -17,20 +17,7 @@ const DropdownMenu = () => {
   const { theme, setTheme } = useContext(ThemeContext);
 
   const handleOptionClick = (option) => {
-    // const bg = document.querySelector('body');
-    // const changingTexts = document.querySelectorAll('.changingText');
-    // const introParas = document.querySelectorAll('.LandingPageValues p');
-    // const headings = document.querySelectorAll('.test .heading');
-    // const box = document.querySelectorAll('.test .box');
-    // const boxtitles = document.querySelectorAll('.test .box h1');
-    // const boxdescriptions = document.querySelectorAll('.test .box p');
-    // const projectDescriptions = document.querySelectorAll('.project-Description');
-    // const projectDescriptionTitles = document.querySelectorAll('.project-Description .project-Description-Header .title');
-    // const projectDescriptionbodies = document.querySelectorAll('.project-Description .project-Description-body p');
-    // const projectDescriptioninstructions = document.querySelectorAll('.project-Description .project-Description-body h1');
-    // const projectDescriptioncopyText = document.querySelectorAll('.project-Description .project-Description-body .copy-text');
-    // const projectDescriptioninputs = document.querySelectorAll('.project-Description .project-Description-body .copy-text input');
-    // const projectDescriptioninputsText = document.querySelectorAll('.project-Description .project-Description-body .copy-text input.text');
+    
 
     // const tradingviewArticleTitle = document.querySelectorAll('.tradingviewArticles h1');
     // const tradingviewArticlebody = document.querySelectorAll('.tradingviewArticles p');
