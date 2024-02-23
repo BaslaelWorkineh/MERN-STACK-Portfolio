@@ -338,6 +338,29 @@ const Home = () => {
         return () => clearInterval(interval);
     }, [currentText, index, texts]);
 
+
+
+
+    //downloading cv
+    const handleDownload = () => {
+       
+        const cvUrl = './SkillImages/Baslael\'s CV.pdf';
+        
+        // Create an anchor element
+        const link = document.createElement('a');
+        link.href = cvUrl;
+        link.download = 'your_cv.pdf'; // Specify the name for the downloaded file
+        
+        // Append the anchor element to the body
+        document.body.appendChild(link);
+        
+        // Trigger the click event on the anchor element
+        link.click();
+        
+        // Clean up by removing the anchor element from the body
+        document.body.removeChild(link);
+      };
+
     return (
         <>
             <body
@@ -350,7 +373,7 @@ const Home = () => {
                             <p style={{ color: theme === 'Light' ? '#666' : '#bababa' }}>I'm a passionate programmer who thrives on collaborative teamwork, with a love for coding <br />that drives my commitment to quality and continuous learning.</p>
                             <div className='LandingBtns'>
                                 <button className='hiremeBtn'>Hire Me</button>
-                                <button className='cvBtn'>Download CV</button>
+                                <button className='cvBtn'  onClick={handleDownload}>Download CV</button>
                             </div>
                         </div>
 
@@ -520,37 +543,37 @@ const Home = () => {
                         <div className='ourServicesBox'>
                             <img src={web} />
                             <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Web Development</h2>
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation,  </p>
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>I create custom digital solutions tailored to your business needs. From sleek designs to robust functionality, we leverage the latest technologies to ensure seamless user experiences across all platforms. Partner with me to elevate your online presence and stay ahead in the digital landscape.</p>
                         </div>
 
                         <div className='ourServicesBox'>
                             <img src={phone} />
                             <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Mobile App Development</h2>
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation,  </p>
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>I provide innovative and user-friendly applications to help businesses thrive in the mobile market. We utilize cutting-edge technologies to deliver high-quality, customized solutions that meet your unique needs and exceed expectations. Partner with me to bring your app ideas to life and make a significant impact in the mobile industry.</p>
                         </div>
 
                         <div className='ourServicesBox'>
                             <img src={debug} />
                             <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Debugging</h2>
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation, </p>
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>In my Debugging service, I expertly identify and resolve software code issues to ensure seamless functionality. With a focus on efficiency and precision, I diagnos bugs of any complexity level, ensuring robust and error-free applications. Partner with me to elevate the quality and performance of your software products.</p>
                         </div>
 
                         <div className='ourServicesBox'>
                             <img src={mentor} />
                             <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Mentorship</h2>
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation,  </p>
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}> Providing personalized guidance to help individuals navigate their professional and personal growth. Through tailored sessions and resources, as an experienced mentor I empower mentees to achieve their goals, overcome challenges, and unlock their full potential. Join me for a transformative mentorship journey tailored to your unique aspirations. </p>
                         </div>
 
                         <div className='ourServicesBox'>
                             <img src={game} />
                             <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Game Development</h2>
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation,  </p>
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>As the sole developer, my Game Development service is dedicated to bringing your unique vision to life. From conceptualization to execution, I specialize in crafting captivating games across different platforms. Partner with me to transform your gaming ideas into reality and captivate audiences worldwide. </p>
                         </div>
 
                         <div className='ourServicesBox'>
                             <img src={skill1} />
-                            <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>3d Design</h2>
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation,  </p>
+                            <h2 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Low Poly 3d Design</h2>
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>In my Low Poly 3D Design service, I specialize in creating visually stunning designs with a minimalist aesthetic. Using optimized techniques, I craft captivating scenes ideal for games, animations, and virtual environments. Partner with me to bring your creative visions to life with charming low poly designs.</p>
                         </div>
 
                     </div>

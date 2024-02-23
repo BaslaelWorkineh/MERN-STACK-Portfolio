@@ -1,0 +1,61 @@
+
+.blog-Contents{
+    display: block;
+    place-items: left;  
+}
+.blog-Contents .blogTitle{
+    font-size: 28px;
+    padding-top: 60px;
+    padding-left: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
+.blog-Contents .blogParagraph{
+    padding: 30px;
+}
+.blog-Contents .commentLists{
+    width: 60vw;
+}
+.blog-Contents .commentLists p{
+    text-align: justify;
+    padding: 10px;
+    width: 50vw;
+}
+.blog-Contents .addCommentSection{
+    padding: 10px;
+    border-radius: 5px;
+}
+.underTheMain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.underTheMain .OtherArticles{
+    padding: 20px;
+    
+}
+.underTheMain .otherArticlesContainer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.underTheMain .OtherArticles .articlesContainer{
+    background: rgba(255, 255, 255, 0);
+   box-shadow: none;
+   border: 1px solid gray;
+   width: 300px;
+   height: 300px;
+   backdrop-filter: none;
+}
+
+.underTheMain .OtherArticles .articlesContainer img{
+    width: 150px;
+    height: 100px;
+    clip-path: polygon(0 0,100% 0, 100% 100%, 0 100%);
+    
+}
+.underTheMain .OtherArticles .articlesContainer p{
+    font-size: 14px;
+}
+
+.underTheMain .OtherArticles .otherArticlesContainer{
+    
+}

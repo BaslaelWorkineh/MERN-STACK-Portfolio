@@ -1,0 +1,37 @@
+.commentListContainer{
+    display: grid;
+    
+}
+
+.commentListContainer .commentPic{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+.commentListContainer a{
+    color: rgb(154, 154, 255);
+}
+.CommentsHeader {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .username-and-text-holder {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 1px solid black;
+  }
+  
+  .username-and-text-holder h4 {
+    font-weight: 500;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+  
+  .username-and-text-holder p {
+    margin-top: 5px;
+    font-family:'Times New Roman', Times, serif;
+  }
+  

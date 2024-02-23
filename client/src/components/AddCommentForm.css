@@ -1,0 +1,49 @@
+.comment-box{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 700px;
+    border: 1px solid gray;
+    padding: 20px;
+}
+
+.h2{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.comment-box input{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solide #86b0b6;
+}
+.comment-box input:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+.comment-box textarea{
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #86b0b6;
+}
+.comment-box textarea:focus{
+    border: 1px solid #000;
+    outline: 0;
+}
+
+.comment-box button{
+    border: 0;
+    padding: 10px 30px;
+    background: #86b0b6;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.comment-box button:hover{
+    background-color: #718a8e;
+}
