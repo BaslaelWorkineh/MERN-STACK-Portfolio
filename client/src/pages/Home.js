@@ -43,6 +43,10 @@ import Motorbike from './Gifs/Motorbike.png';
 import motorbikeview from './Gifs/motorbikeview.png';
 import motor from './Gifs/motor.gif';
 
+import blogcode from './Gifs/blogcode.png';
+import blogcodeone from './Gifs/blogcodefour.png';
+import blogcodetwo from './Gifs/blogcodetwo.png';
+
 import chatbotButton from './Gifs/chat.svg';
 
 import mentor from './Gifs/mentor.svg';
@@ -413,13 +417,6 @@ const Home = () => {
                     <div className='box-container'>
 
                         <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
-                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Wild Life Simulation(Smart AI Animals)</h1>
-                            <img src={wildlifesimulation} alt="Wild Life Simulation" />
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }} >In this captivating low-poly wildlife simulation, the enchanting world of nature comes to life as foxes and sheep roam freely in their natural habitat. With...</p>
-                            <button onClick={() => openProject('Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation, the enchanting world of nature comes to life as foxes and sheep roam freely in their natural habitat. With visuals and details, the simulation showcases the beauty of these creatures and their daily activities. The foxes and sheep engage in a lifelike routine, driven by their basic instincts. Both the foxes and sheep have their own unique needs and behaviors. They diligently search for sustenance, driven by the desire to find what they need most: food, water, or the opportunity to mate. The simulation accurately portrays their hunting and grazing behaviors as they seek out nourishment in their surroundings.The cycle of life continues as the sheep reproduce, bringing new life into the world. With an average of 2 to 6 offspring per birth, the sheep population gradually expands, adding to the diversity of the ecosystem. The foxes, on the other hand, reproduce at a slower pace, typically giving birth to 1 or 2 cubs approximately 9 minutes after mating. As the day transitions into night, the simulation captures the essence of the animals\' natural rhythms. The foxes and sheep find a safe spot to rest and sleep, rejuvenating their energy for the adventures that await them in the following day. Through this immersive low-poly wildlife simulation, viewers can witness the intricate dynamics of the animal kingdom, appreciating the delicate balance between survival, reproduction, and the pursuit of essential needs. It serves as a reminder of the awe-inspiring wonders of nature and the interconnectedness of all living beings in the wild.',
-                                [wildlifesimulation, wildlifegoat, wildlife], 'git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY', 'lFQmcj_tWio')}>Read More</button>
-                        </div>
-                        <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
                             <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Cheap Delala(Java & Postgresql) also with MERN Stack</h1>
                             <img src={cheapdelala} alt="Cheap Delala" />
                             <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>The House Rental and Sale System developed in Java and Postgresql (also with MERN STACK) is a comprehensive platform designed to provide a user-friendly experience for...</p>
@@ -428,32 +425,12 @@ const Home = () => {
                         </div>
 
                         <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
-                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Slash Dash(C# Unity and Photoshop) in One.5 day</h1>
-                            <img src={SlashDash} alt="Slash Dash(C# Unity and Photoshop) in two day" />
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>The "2 Day Challenge" was an exhilarating game development endeavor that I embarked on independently. Within a tight timeframe, I successfully created a captivating 2D game using the Unity game engine and...</p>
-                            <button onClick={() => openProject('Slash Dash(C# Unity and Photoshop) in One.5 day', 'The "2 Day Challenge" was an exhilarating game development endeavor that I embarked on independently. Within a tight timeframe, I successfully created a captivating 2D game using the Unity game engine and implemented it with the C# programming language. Taking inspiration from various sources, I meticulously designed my own unique character and environment, ensuring a visually appealing and immersive gameplay experience. While I incorporated one character from BLACKTHORNPROD, I dedicatedly built all the functionalities from scratch, showcasing my programming skills and problem-solving abilities. Despite the time constraints, I pushed myself to complete the project within just one and a half days, demonstrating my determination and commitment to delivering a polished and fully functional game. This 3 Day Challenge was an incredible opportunity for me to showcase my creativity, technical expertise, and passion for game development.',
-                                [SlashDash, slashdashexplosion, enemySlash], 'git clone https://github.com/BaslaelWorkineh/Slash-Dash_source-code-MyGame', 'ImljRwyB-_M')}>Read More</button>
-                        </div>
-                    </div>
-
-                    <div className='box-container'>
-
-                        <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
                             <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Mobile Multiplayer TPS Starter Asset<br />(Available on asset store for only <strong>23.99$</strong>)</h1>
                             <img src={multiplayerpng} alt="Mobile Multiplayer TPS Starter Asset" />
 
                             <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>This starter asset provides essential mechanics like shooting, running, and jumping, alongside aim features, procedural recoil, weapon reloading, bot enemies, and a kill leaderboard...</p>
                             <button onClick={() => openProject('Mobile Multiplayer TPS Starter Asset', 'This starter asset provides essential mechanics like shooting, running, and jumping, alongside aim features, procedural recoil, weapon reloading, bot enemies, and a kill leaderboard.  1. Synchronized Multiplayer. 2. Shooting Mechanics: Aim, Procedural Recoil, Reload(Ammo) system, Gun Switching, Bomb Throwing. 3. Different Abilities: Jumping, Running, Sprinting, Grabbing objects, Throwing Object, Climbing ladder. 4.InteractiveEnvironment: Spring, Player Vanisher, Portal 5. AI Enemy Bot. This content is customizable and adaptable, making it suitable for various game genres, particularly those centered around engaging multiplayer experiences. Available on Asset Store at "https://assetstore.unity.com/preview/276643/892792" for only 23.99$',
-                                [multiplayerpng, multiplayer, multiplayercode], 'N/A No Source code will be Available for this Project', 'ZVfKeEiKNo0')}>Read More</button>
-                        </div>
-
-                        <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
-                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Motorbike Physics Using c#</h1>
-                            <img src={motorbikeview} alt="Motorbike Physics Using c#" />
-
-                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>The motorbike controller, crafted using C# programming language and Blender, is a sophisticated device engineered to elevate the riding experience for motorcycle enthu...</p>
-                            <button onClick={() => openProject('Motorbike Physics Using c#', 'The motorbike controller, crafted using C# programming language and Blender, is a sophisticated device engineered to elevate the riding experience for motorcycle enthusiasts. Through seamless integration of software and hardware, this controller empowers riders with intuitive control over critical motorcycle functionalities. Leveraging the power of C# programming, it delivers robust performance and precise responsiveness. Blender\'s advanced design capabilities ensure a sleek and ergonomic form factor, seamlessly blending aesthetics with functionality. With the motorbike controller, riders can effortlessly fine-tune throttle response, traction control, and suspension settings to achieve optimal performance and comfort. It represents the perfect fusion of cutting-edge technology and elegant design, enhancing the thrill of motorcycle riding for enthusiasts worldwide.',
-                                [motorbikeview, motor, Motorbike], 'git clone https://github.com/BaslaelWorkineh/Unity-3d-Motorbike-Controller.git', 'sYftUpn_LZY')}>Read More</button>
+                                [multiplayerpng, multiplayer, multiplayercode], 'No Source code will be Available for this Project', 'ZVfKeEiKNo0')}>Read More</button>
                         </div>
 
                         <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
@@ -466,7 +443,36 @@ const Home = () => {
                         </div>
 
                     </div>
-                    <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }} href='' className='heading'><a href='https://github.com/BaslaelWorkineh'>See More...</a></h1>
+
+                    <div className='box-container'>
+
+                        <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
+                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Slash Dash(C# Unity and Photoshop) in One.5 day</h1>
+                            <img src={SlashDash} alt="Slash Dash(C# Unity and Photoshop) in two day" />
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>The "2 Day Challenge" was an exhilarating game development endeavor that I embarked on independently. Within a tight timeframe, I successfully created a captivating 2D game using the Unity game engine and...</p>
+                            <button onClick={() => openProject('Slash Dash(C# Unity and Photoshop) in One.5 day', 'The "2 Day Challenge" was an exhilarating game development endeavor that I embarked on independently. Within a tight timeframe, I successfully created a captivating 2D game using the Unity game engine and implemented it with the C# programming language. Taking inspiration from various sources, I meticulously designed my own unique character and environment, ensuring a visually appealing and immersive gameplay experience. While I incorporated one character from BLACKTHORNPROD, I dedicatedly built all the functionalities from scratch, showcasing my programming skills and problem-solving abilities. Despite the time constraints, I pushed myself to complete the project within just one and a half days, demonstrating my determination and commitment to delivering a polished and fully functional game. This 3 Day Challenge was an incredible opportunity for me to showcase my creativity, technical expertise, and passion for game development.',
+                                [SlashDash, slashdashexplosion, enemySlash], 'git clone https://github.com/BaslaelWorkineh/Slash-Dash_source-code-MyGame.git', 'ImljRwyB-_M')}>Read More</button>
+                        </div>
+
+                        <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
+                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>MERN Stack Blog</h1>
+                            <img src={blogcode} alt="Motorbike Physics Using c#" />
+
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>The MERN Stack Blog Portfolio project combines the power of the MERN (MongoDB, Express.js, React.js, Node.js) stack with the versatility of a personal portfolio. This project ...</p>
+                            <button onClick={() => openProject('MERN Stack Blog', 'The MERN Stack Blog Portfolio project combines the power of the MERN (MongoDB, Express.js, React.js, Node.js) stack with the versatility of a personal portfolio. This project serves as a dynamic platform for showcasing both technical prowess and personal achievements. Leveraging MongoDB as the database, it allows for seamless storage and retrieval of blog posts, ensuring efficient management of content. Express.js, functioning as the backend framework, facilitates smooth communication between the frontend and the database, ensuring data integrity and security. The frontend, built with React.js, provides an interactive and user-friendly interface for visitors to navigate through the portfolio and access blog content. Utilizing React components, the interface offers a seamless browsing experience, enhancing user engagement and satisfaction. Furthermore, Node.js powers the backend, enabling the efficient handling of server-side operations and facilitating real-time interactions between users and the application. By integrating a blog within a portfolio, this project offers a comprehensive platform for individuals to showcase their skills, projects, and insights in a single cohesive space. Whether it\'s sharing technical tutorials, project updates, or personal reflections, the MERN Stack Blog Portfolio project provides a versatile and customizable platform for individuals to express themselves and connect with their audience',
+                                [blogcode, blogcodetwo, blogcodeone], 'git clone https://github.com/BaslaelWorkineh/MERN-STACK-Portfolio.git', 'N/A')}>Read More</button>
+                        </div>
+
+                        <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
+                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Wild Life Simulation(Smart AI Animals)</h1>
+                            <img src={wildlifesimulation} alt="Wild Life Simulation" />
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }} >In this captivating low-poly wildlife simulation, the enchanting world of nature comes to life as foxes and sheep roam freely in their natural habitat. With...</p>
+                            <button onClick={() => openProject('Wild Life Simulation(Smart AI Animals)', 'The video was recorded when the project was in progress but unfortunatly I lost the project due to sudden problem in my comuputer. In this captivating low-poly wildlife simulation, the enchanting world of nature comes to life as foxes and sheep roam freely in their natural habitat. With visuals and details, the simulation showcases the beauty of these creatures and their daily activities. The foxes and sheep engage in a lifelike routine, driven by their basic instincts. Both the foxes and sheep have their own unique needs and behaviors. They diligently search for sustenance, driven by the desire to find what they need most: food, water, or the opportunity to mate. The simulation accurately portrays their hunting and grazing behaviors as they seek out nourishment in their surroundings.The cycle of life continues as the sheep reproduce, bringing new life into the world. With an average of 2 to 6 offspring per birth, the sheep population gradually expands, adding to the diversity of the ecosystem. The foxes, on the other hand, reproduce at a slower pace, typically giving birth to 1 or 2 cubs approximately 9 minutes after mating. As the day transitions into night, the simulation captures the essence of the animals\' natural rhythms. The foxes and sheep find a safe spot to rest and sleep, rejuvenating their energy for the adventures that await them in the following day. Through this immersive low-poly wildlife simulation, viewers can witness the intricate dynamics of the animal kingdom, appreciating the delicate balance between survival, reproduction, and the pursuit of essential needs. It serves as a reminder of the awe-inspiring wonders of nature and the interconnectedness of all living beings in the wild.',
+                                [wildlifesimulation, wildlifegoat, wildlife], 'No Link available at the moment', 'lFQmcj_tWio')}>Read More</button>
+                        </div>
+
+                    </div>
+                    <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }} href='' className='heading'><a href='https://github.com/BaslaelWorkineh' target='_blank'>See More...</a></h1>
 
                 </section>
 
@@ -565,7 +571,7 @@ const Home = () => {
 
                 <div className='latestArticlesHolder'>
                     <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Explore Latest Articles</h1>
-                    
+
                     <Link to="/articlesList" className='pl-6 pr-8'><HomePageLatestArticles /></Link>
 
                 </div>

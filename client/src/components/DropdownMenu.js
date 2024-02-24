@@ -35,7 +35,7 @@ const DropdownMenu = () => {
 
   useEffect(() => {
     // Call handleOptionClick with "Light" option when the component is mounted
-    handleOptionClick("Light");
+    handleOptionClick("Dark");
   }, []); // Empty dependency array ensures this effect runs only once on mount
 
 
