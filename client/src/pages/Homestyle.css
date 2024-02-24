@@ -104,6 +104,10 @@ body::-webkit-scrollbar-thumb:hover {
     background: -ms-linear-gradient(135deg, #ff4b2b, #ff416c);
 }
 
+.LandingBtns .hiremeBtn:active{
+    background: linear-gradient(135deg, #1d1628, #624742);
+}
+
 .LandingBtns .cvBtn {
     width: 10vw;
     height: 3.5vw;
@@ -133,6 +137,9 @@ body::-webkit-scrollbar-thumb:hover {
     background: -ms-linear-gradient(135deg, #ff4b2b, #ff416c);
 }
 
+.LandingBtns .cvBtn:active{
+    background: linear-gradient(135deg, #1d1628, #624742);
+}
 .profilePic{
  margin-left: 5vw;
  margin-top: -7%;
