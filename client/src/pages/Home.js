@@ -352,7 +352,7 @@ const Home = () => {
                             <h1 className='changingText' style={{ color: theme === 'Light' ? '#535353' : '#bababa' }}>{currentText}</h1>
                             <p style={{ color: theme === 'Light' ? '#666' : '#bababa' }}>I'm a passionate programmer who thrives on collaborative teamwork, with a love for coding <br />that drives my commitment to quality and continuous learning.</p>
                             <div className='LandingBtns'>
-                                <button className='hiremeBtn'>Hire Me</button>
+                                <a href='https://www.linkedin.com/in/baslael-workineh-ayele-131b11248/' target='_blank'><button className='hiremeBtn'>Hire Me</button></a>
                                 <a href='https://drive.usercontent.google.com/uc?export=download&id=1iNJQtjSPqGtYWQfP0GxdHr8YW8HOam67'><button className='cvBtn' >Download CV</button></a>
                             </div>
                         </div>
