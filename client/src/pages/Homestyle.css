@@ -191,12 +191,12 @@ body::-webkit-scrollbar-thumb:hover {
 .slider ul.brands {
     list-style: none;
 
-    width: 100%;
+    width: 119%;
 
     display: flex;
-    gap: 6px;
+    gap:6px;
 
-    animation: slideLeft 16s linear infinite;
+    animation: slideLeft 4s linear infinite;
 }
 
 @keyframes slideLeft {
