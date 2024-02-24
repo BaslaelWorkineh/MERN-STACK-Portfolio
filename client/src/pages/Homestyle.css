@@ -196,7 +196,7 @@ body::-webkit-scrollbar-thumb:hover {
     display: flex;
     gap:6px;
 
-    animation: slideLeft 4s linear infinite;
+    animation: slideLeft 16s linear infinite;
 }
 
 @keyframes slideLeft {
