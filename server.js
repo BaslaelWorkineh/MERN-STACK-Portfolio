@@ -10,7 +10,7 @@ app.use(express.json({extended: false}));
 
 const withDB = async(operations, res) => {
     try{
-        const client = await MongoClient.connect('mongodb://localhost:27017')
+        const client = await MongoClient.connect('mongodb+srv://baslaworku:<basuismena>@cluster0.r0dzflz.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0')
         const db = client.db("MernBlog")
         await operations(db);
         client.close();
