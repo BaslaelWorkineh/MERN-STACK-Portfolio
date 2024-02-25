@@ -36,6 +36,13 @@ const ResumeLike = () => {
                     <div className="resume-contents">
                         <div className="resume-box" style={{ background: theme === 'Light' ? '#c6ffbb' : '#282727' }}>
                             <h4>2023 - Present</h4>
+                            <h3 style={{ color: theme === 'Light' ? 'rgb(35, 35, 35)' : '#bababa' }}>Intern at Prodigy InfoTech</h3>
+                            <p style={{ color: theme === 'Light' ? 'rgb(50, 50, 50)' : '#bababa' }}>As a Machine Learning intern.</p>
+                        </div>
+                    </div>
+                    <div className="resume-contents">
+                        <div className="resume-box" style={{ background: theme === 'Light' ? '#c6ffbb' : '#282727' }}>
+                            <h4>2023 - Present</h4>
                             <h3 style={{ color: theme === 'Light' ? 'rgb(35, 35, 35)' : '#bababa' }}>Co-founder of Mela Tech</h3>
                             <p style={{ color: theme === 'Light' ? 'rgb(50, 50, 50)' : '#bababa' }}>Co-Founded Mela tech Solutions, providing IT-related services such as Web and Mobile Apps.</p>
                         </div>
