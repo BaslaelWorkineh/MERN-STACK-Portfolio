@@ -8,12 +8,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    transition: 200ms ease-in-out;
 }
 
 /* Customize scrollbar for the body */
 body {
+    width: 101%;
     overflow-y: scroll; /* Enable vertical scrollbar */
     overflow-x: hidden;
+    
 }
 
 /* Customize scrollbar */
@@ -144,21 +147,47 @@ body::-webkit-scrollbar-thumb:hover {
  margin-left: 5vw;
  margin-top: -7%;
  z-index: 20;
+ display: grid;
+ place-items: center;
 }
 
+/* Rounded image with border, shadow, and hover effect */
 .profilePic img {
-    
     border-radius: 50%; /* Ensures the image is round */
     width: 25vw;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
-    border: 3px solid #ffffff; /* Adds a white border around the image */
-    transition: transform 0.3s ease-in-out; /* Adds a smooth transition effect */
+    overflow: hidden; /* Clip any overflow */
+    position: relative; /* Position for pseudo-element */
+    
+}
+
+/* Create pseudo-element for overlay effect */
+.profilePic img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease-in-out; /* Smooth transition for overlay */
 }
 
 /* Add a hover effect */
-.profilePic img:hover {
-    transform: scale(1.1); /* Enlarges the image slightly on hover */
+.profilePic img:hover::before {
+    opacity: 1; /* Show overlay on hover */
 }
+
+/* Optional: Add transition to box-shadow for smoother effect */
+.profilePic img:hover {
+    box-shadow: 0 0 30px rgba(99, 99, 99, 0.5); /* Increases shadow on hover */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Adds smooth transitions for transform and box shadow */
+}
+
+
+
 
 
 
@@ -297,6 +326,7 @@ ul.brands li.brand-logo img{
     transition: 200ms ease-in-out;
     display: none;
     overflow: auto;
+    overflow-x: hidden;
 }
 
 /* Customize scrollbar */
@@ -323,16 +353,14 @@ ul.brands li.brand-logo img{
     background: #555; /* Set thumb color on hover */
 }
 .project-Description-Media {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    place-items: center;
 }
 
 .project-Description-Media img {
-    max-width: 33%;
     height: auto;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 10px;
 }
 
 .project-Description-Header {
@@ -369,11 +397,24 @@ ul.brands li.brand-logo img{
     
 }
 
-.project-Description-body .YTVideo {
-    position: relative; /* Ensure positioning context for absolute centering */
-    margin-left: 50%; /* Move the element halfway to the right */
-    transform: translateX(-50%); /* Move the element back by half of its own width */
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio (height:width) */
+    padding-top: 30px; /* Optional: Add some top padding to prevent content from touching the top of the container */
+    height: 0;
+    overflow: hidden;
 }
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
 
 #overlay{
     position: fixed;
@@ -413,13 +454,14 @@ ul.brands li.brand-logo img{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .copy-text button{
-    padding: 10px;
+    width: 60px;
+    height: 50px;
     background: #5784f5;
     color:#fff;
     font-size: 18px;
     border: none;
     outline: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
 }
 .copy-text button:active{
@@ -453,9 +495,14 @@ ul.brands li.brand-logo img{
 .copy-text.active button::after{
     display: block;
 }
+.buttonSeparator{
+    display: flex;
+    justify-content: space-between;
+}
 .closeBtn {
+    width: 80px;
+    height: 40px;
     display: inline-block;
-    padding: 10px 20px;
     font-size: 16px;
     font-weight: bold;
     color: #ffffff;
@@ -464,7 +511,6 @@ ul.brands li.brand-logo img{
     cursor: pointer;
     background-image: linear-gradient(to right, #FF6B6B, #FF8E53);
     transition: background-color 0.3s ease;
-    margin-left: 94%;
     font-family:Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -649,8 +695,35 @@ ul.brands li.brand-logo img{
          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
          
      }
+     .project-Description-Media {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    }
    
-     
+    .project-Description-Header .title {
+        font-size: 1.4rem;
+    }
+    .project-Description-body{
+        font-size: 16px;
+    }
+    .project-Description .instructions{
+        font-size: 16px;
+    }
+
+    .copy-text{
+        height: 50px;
+    }
+    .copy-text input.text{
+        font-size: 16px;
+    }
+    .copy-text button{
+        font-size: 16px;
+        height: 30px;
+    }
+    .closeBtn{
+        font-size: 16px;
+        height: 30px;
+        width: 60px;
+    }
  }
  @media(max-width: 400px) {
      .projectList .projectContainer {
@@ -660,7 +733,37 @@ ul.brands li.brand-logo img{
         grid-template-columns: repeat(auto-fit, (1, 1fr));
         
     }
-  
+    .project-Description-Media {
+        grid-template-columns: repeat(auto-fit, minmax(1, 1fr));
+    }
+    .project-Description-Header .title {
+        font-size: 1rem;
+    }
+    .project-Description-body{
+        font-size: 12px;
+    }
+    .project-Description .instructions{
+        font-size: 12px;
+    }
+    
+    .copy-text{
+        height: 40px;
+    }
+    .copy-text input.text{
+        font-size: 12px;
+    }
+    .copy-text button{
+        font-size: 12px;
+        height: 25px;
+        width: 40px;
+        border-radius: 5px;
+        margin-top: -2px;
+    }
+    .closeBtn{
+        font-size: 12px;
+        height: 30px;
+        width: 60px;
+    }
      .chatbot {
         bottom: -30%;
         left: 50%;

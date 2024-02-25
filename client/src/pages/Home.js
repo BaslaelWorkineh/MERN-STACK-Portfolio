@@ -358,7 +358,7 @@ const Home = () => {
                         </div>
 
                         <div className='profilePic'>
-                            <img src={profilepic} />
+                            <img src={profilepic}></img>
                         </div>
                     </div>
 
@@ -487,10 +487,13 @@ const Home = () => {
                     <div className='project-Description-body' >
 
                         <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}></p>
-
+                    <div className='video-container'>
                         <YouTube className='YTVideo' videoId={vd} opts={opts} />
-
-                        <h1 className='instructions' style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}><br />(1) Open Git Bash.<br />
+                    </div>
+                        
+                    <div className='toDoforClone'>
+                        <div>
+                            <h1 className='instructions' style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}><br />(1) Open Git Bash.<br />
                             (2) Change the current working directory to the location where you want the cloned directory.<br />
                             (3) Type git clone, and then paste the URL you copied earlier.</h1>
                         <div className='copy-text' style={{ background: theme === 'Light' ? '#333' : '#f9f9f97b' }}>
@@ -500,8 +503,20 @@ const Home = () => {
 
                         <h1 className='instructions' style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>If you don't have Git Bash <br />
                             Install git first</h1>
+                        </div>
+                        <div className='buttonSeparator'>
+                            <div>
 
-                        <button className='close-button closeBtn' onClick={closeProject}>Close</button>
+                            </div>
+                            <div>
+                                <button className='close-button closeBtn' onClick={closeProject}>Close</button>
+                            </div>
+                             
+                        </div>
+
+                       
+                    </div>
+                        
                     </div>
                 </div>
                 <div id='overlay' onClick={closeProject}></div>
