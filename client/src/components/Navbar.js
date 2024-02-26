@@ -35,6 +35,9 @@ const Navbar = () => {
             <Link to="/" className='navBtns'>Home</Link>
         </li>
         <li className=''>
+            <Link to="/" className='navBtns'>Upload Article</Link>
+        </li>
+        <li className=''>
             <Link to="/" className='navBtns'>Me</Link>
         </li>
         <li className=''>
@@ -43,7 +46,6 @@ const Navbar = () => {
         <li className=''>
             <Link to="/articlesList" className='navBtns'>Blog</Link>
         </li>
-
         <li className='settingMobile'>
             <DropdownMenu/>
         </li>
@@ -57,6 +59,9 @@ const Navbar = () => {
             <Link to="/" className='navBtns'>Home</Link>
         </li>
         <li className='hideOnMobile'>
+            <Link to="/" className='navBtns'>Upload Article</Link>
+        </li>
+        <li className='hideOnMobile'>
             <Link to="/" className='navBtns'>Me</Link>
         </li>
         <li className='hideOnMobile'>
@@ -65,7 +70,6 @@ const Navbar = () => {
         <li className='hideOnMobile'>
             <Link to="/articlesList" className='navBtns'>Blog</Link>
         </li>
-
         <li className='hideOnMobile settings'>
             <DropdownMenu/>
         </li>
