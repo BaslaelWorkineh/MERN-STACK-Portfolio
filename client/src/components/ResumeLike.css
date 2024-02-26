@@ -15,7 +15,7 @@
 
 .resume-col header.resume-title {
     font-family: helvetica;
-    color: #11a372;
+    color: #a37211;
     padding: 0px 0px 20px 30px;
 }
 
@@ -47,13 +47,13 @@
     border-radius: 50%;
     right: calc(100% + 22px);
     top: 0;
-    background-color: #11a372;
+    background-color: #a37211;
     border: 2px solid white;
 }
 
 .resume-box h4 {
     position: relative;
-    color: #11a372;
+    color: #a37211;
 }
 
 .resume-box h3 {
