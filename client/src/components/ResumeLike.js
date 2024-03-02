@@ -14,12 +14,12 @@ const ResumeLike = () => {
                         <h2>EDUCATION</h2>
                     </header>
                     <div className="resume-contents">
-                        <div className="resume-box" style={{ background: theme === 'Light' ? '#c6ffbb' : '#282727' }}>
+                        <div className="resume-box" style={{ background: theme === 'Light' ? '#e9e9e9' : '#282727' }}>
                             <h4>2018 - 2021</h4>
                             <h3 style={{ color: theme === 'Light' ? 'rgb(35, 35, 35)' : '#bababa' }}>High School Degree</h3>
                             <p style={{ color: theme === 'Light' ? 'rgb(50, 50, 50)' : '#bababa' }}>I completed my high school education at St. Joseph Catholic School in Adama with a high score in the EUEE, which earned me an award from the Oromia region.</p>
                         </div>
-                        <div className="resume-box" style={{ background: theme === 'Light' ? '#c6ffbb' : '#282727' }}>
+                        <div className="resume-box" style={{ background: theme === 'Light' ? '#e9e9e9' : '#282727' }}>
                             <h4>2021 - Present</h4>
                             <h3 style={{ color: theme === 'Light' ? 'rgb(35, 35, 35)' : '#bababa' }}>Bachelor's Degree</h3>
                             <p style={{ color: theme === 'Light' ? 'rgb(50, 50, 50)' : '#bababa' }}>I am currently enrolled in the School of Computational and Natural Sciences at Addis Ababa University.</p>
@@ -34,14 +34,14 @@ const ResumeLike = () => {
                         <h2>EXPERIENCE</h2>
                     </header>
                     <div className="resume-contents">
-                        <div className="resume-box" style={{ background: theme === 'Light' ? '#c6ffbb' : '#282727' }}>
+                        <div className="resume-box" style={{ background: theme === 'Light' ? '#e9e9e9' : '#282727' }}>
                             <h4>2023 - Present</h4>
                             <h3 style={{ color: theme === 'Light' ? 'rgb(35, 35, 35)' : '#bababa' }}>Intern at Prodigy InfoTech</h3>
                             <p style={{ color: theme === 'Light' ? 'rgb(50, 50, 50)' : '#bababa' }}>As a Machine Learning intern.</p>
                         </div>
                     </div>
                     <div className="resume-contents">
-                        <div className="resume-box" style={{ background: theme === 'Light' ? '#c6ffbb' : '#282727' }}>
+                        <div className="resume-box" style={{ background: theme === 'Light' ? '#e9e9e9' : '#282727' }}>
                             <h4>2023 - Present</h4>
                             <h3 style={{ color: theme === 'Light' ? 'rgb(35, 35, 35)' : '#bababa' }}>Co-founder of Mela Tech</h3>
                             <p style={{ color: theme === 'Light' ? 'rgb(50, 50, 50)' : '#bababa' }}>Co-Founded Mela tech Solutions, providing IT-related services such as Web and Mobile Apps.</p>

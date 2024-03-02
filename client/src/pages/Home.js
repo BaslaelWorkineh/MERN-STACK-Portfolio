@@ -47,6 +47,10 @@ import blogcode from './Gifs/blogcode.png';
 import blogcodeone from './Gifs/blogcodefour.png';
 import blogcodetwo from './Gifs/blogcodetwo.png';
 
+import feresone from './Gifs/Im1.jpg';
+import feresTwo from './Gifs/Im6.jpg';
+import feresThree from './Gifs/Im4.jpg';
+
 import chatbotButton from './Gifs/chat.svg';
 
 import mentor from './Gifs/mentor.svg';
@@ -415,6 +419,14 @@ const Home = () => {
                     <h1 className='heading' style={{ color: theme === 'Light' ? '#000000' : '#dfdfdf' }}>Recent Projects I've Been working on.</h1>
 
                     <div className='box-container'>
+                    <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
+                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Feres Transportaion App(Clone) with React Native</h1>
+                            <img src={feresThree} alt="Feres Transportation sytem clone" />
+
+                            <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>In this project, I aimed to replicate every detail of Ethiopia's famous transportation app, Feres, using React Native. The goal was to provide users with an experience that closely resembles using the original app, ensuring familiarity and ease of use.</p>
+                            <button onClick={() => openProject('Feres Transportaion app(Clone)', 'In this project, I aimed to replicate every detail of Ethiopia\'s famous transportation app, Feres, using React Native. The goal was to provide users with an experience that closely resembles using the original app, ensuring familiarity and ease of use. The project involved careful examination and reproduction of various elements, including the user interface components, navigation flow, and functionality. Special attention was given to replicating the fonts, colors, and layout to ensure consistency with the original design. By leveraging the capabilities of React Native, I was able to recreate the core features of the Feres app, such as booking rides, viewing routes, and managing payments. The app provides users with a seamless and intuitive experience, just like the original Feres app, while also showcasing the versatility and power of React Native for building cross-platform mobile applications. Overall, the Feres Clone project serves as a testament to the ability of React Native to replicate complex mobile applications with precision and fidelity, offering users an alternative platform to access the features and services provided by the original app.',
+                                [feresThree, feresTwo, feresone], 'git clone https://github.com/BaslaelWorkineh/Feres-Clone.git', '')}>Read More</button>
+                        </div>
 
                         <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
                             <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Cheap Delala(Java & Postgresql) also with MERN Stack</h1>
@@ -425,7 +437,7 @@ const Home = () => {
                         </div>
 
                         <div className='box' style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' }}>
-                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Mobile Multiplayer TPS Starter Asset<br />(Available on asset store for only <strong>23.99$</strong>)</h1>
+                            <h1 style={{ color: theme === 'Light' ? '#333' : '#dfdfdf' }}>Mobile Multiplayer TPS Starter Asset (Available on asset store for only 23.99$)</h1>
                             <img src={multiplayerpng} alt="Mobile Multiplayer TPS Starter Asset" />
 
                             <p style={{ color: theme === 'Light' ? '#333' : '#bababa' }}>This starter asset provides essential mechanics like shooting, running, and jumping, alongside aim features, procedural recoil, weapon reloading, bot enemies, and a kill leaderboard...</p>
@@ -441,6 +453,7 @@ const Home = () => {
                             <button onClick={() => openProject('Motorbike Physics Using c#', 'The motorbike controller, crafted using C# programming language and Blender, is a sophisticated device engineered to elevate the riding experience for motorcycle enthusiasts. Through seamless integration of software and hardware, this controller empowers riders with intuitive control over critical motorcycle functionalities. Leveraging the power of C# programming, it delivers robust performance and precise responsiveness. Blender\'s advanced design capabilities ensure a sleek and ergonomic form factor, seamlessly blending aesthetics with functionality. With the motorbike controller, riders can effortlessly fine-tune throttle response, traction control, and suspension settings to achieve optimal performance and comfort. It represents the perfect fusion of cutting-edge technology and elegant design, enhancing the thrill of motorcycle riding for enthusiasts worldwide.',
                                 [motorbikeview, motor, Motorbike], 'git clone https://github.com/BaslaelWorkineh/Unity-3d-Motorbike-Controller.git', 'sYftUpn_LZY')}>Read More</button>
                         </div>
+                        
 
                     </div>
 

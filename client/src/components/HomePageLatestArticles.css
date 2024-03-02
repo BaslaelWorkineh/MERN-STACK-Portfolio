@@ -1,17 +1,42 @@
 .latestNewsArticleContainer{
     display: grid;
     gap: 20px;
+    
 }
 .latestNewsArticle {
-    position: relative; /* Required for positioning the pseudo-element */
+    position: relative;
     padding: 30px;
     display: grid;
     border-radius: 5px;
     border: 1px solid white;
     height: 250px;
     overflow: hidden;
-    
+    background-image: url('../pages/Gifs/bitcoin.jpg');
+    background-size: cover;
+    background-position: center;
 }
+
+.latestNewsArticle::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity (last value) to make it darker or lighter */
+    z-index: 1; /* Ensure the overlay is above the background image */
+    border-radius: 5px; /* Ensure the overlay matches the border radius of the container */
+}
+.latestNewsArticle:hover::before{
+    background-color: rgba(87, 87, 87, 0.5);
+}
+
+.latestNewsArticleContent {
+    position: relative;
+    z-index: 2; /* Ensure the content appears above the overlay */
+    color: white; /* Set the color of the text */
+}
+
 .latestNewsArticle:hover{
     cursor: pointer;
 }
@@ -23,12 +48,11 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(55, 55, 55, 0.6); /* Adjust the opacity as needed */
     border-radius: inherit; /* Inherit border-radius from the parent */
     transition: 200ms ease;
 }
 .latestNewsArticle:hover::before{
-    background-color: rgba(31, 31, 31, 0.864);
+    color: whitesmoke;
 } 
 
 .latestNewsArticle h1,

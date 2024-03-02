@@ -259,13 +259,12 @@ ul.brands li.brand-logo img{
 
 .test .box-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 15px;
     padding-bottom: 20px;
 }
 
 .test .box-container .box {
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.418); /* Increased box shadow for depth */
     border-radius: 10px; /* Rounded corners for a softer look */
     text-align: center;
     padding: 40px 30px; /* Increased padding for more space */
@@ -274,6 +273,7 @@ ul.brands li.brand-logo img{
     backdrop-filter: blur(10x);
     display: grid;
     place-items: center;
+    border: 1px solid black;
 }
 
 .test .box-container .box:hover {
@@ -293,6 +293,7 @@ ul.brands li.brand-logo img{
 
 .test .box-container .box p {
     font-size: 16px; /* Smaller font size for paragraphs */
+    text-align: justify;
 }
 
 
@@ -361,6 +362,7 @@ ul.brands li.brand-logo img{
 .project-Description-Media img {
     height: auto;
     border-radius: 10px;
+    padding: 10px;
 }
 
 .project-Description-Header {
@@ -769,7 +771,6 @@ ul.brands li.brand-logo img{
         left: 50%;
         transform: translate(-50%, -50%);
         width: 100vw;
-        height: 82vh;
 
     }
  }

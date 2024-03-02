@@ -1,6 +1,6 @@
 const articles = [
   {
-    name: "learn-react",
+    name: "The-Revolutionary-Journey-of-Tesla-and-Elon-Musk",
     title: "The Revolutionary Journey of Tesla and Elon Musk",
     thumbnail: "/images/BlogImages/Tesla.jpg",
     content: [
@@ -14,7 +14,7 @@ const articles = [
   }
   ,
   {
-    name: "learn-node",
+    name: "Exploring-the-Fascinating-World-of-Holograms",
     title: "Exploring the Fascinating World of Holograms",
     thumbnail: "/images/BlogImages/AIface.gif",
     content: [

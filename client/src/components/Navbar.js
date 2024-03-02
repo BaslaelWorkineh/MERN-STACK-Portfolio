@@ -35,12 +35,6 @@ const Navbar = () => {
             <Link to="/" className='navBtns'>Home</Link>
         </li>
         <li className=''>
-            <Link to="/" className='navBtns'>Me</Link>
-        </li>
-        <li className=''>
-            <Link to="/" className='navBtns'>Comment</Link>
-        </li>
-        <li className=''>
             <Link to="/articlesList" className='navBtns'>Blog</Link>
         </li>
         <li className='settingMobile'>
@@ -54,12 +48,6 @@ const Navbar = () => {
         </li>
         <li className='hideOnMobile'>
             <Link to="/" className='navBtns'>Home</Link>
-        </li>
-        <li className='hideOnMobile'>
-            <Link to="/" className='navBtns'>Me</Link>
-        </li>
-        <li className='hideOnMobile'>
-            <Link to="/" className='navBtns'>Comment</Link>
         </li>
         <li className='hideOnMobile'>
             <Link to="/articlesList" className='navBtns'>Blog</Link>

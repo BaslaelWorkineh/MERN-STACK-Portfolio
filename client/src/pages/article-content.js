@@ -1,6 +1,6 @@
 const articles = [
   {
-    name: "learn-react",
+    name: "Understanding-Ethereum-A-Beginners-Guide",
     title: "Understanding Ethereum: A Beginner's Guide",
     thumbnail: "/images/BlogImages/Etherium.jpg",
     content: [
@@ -15,7 +15,7 @@ const articles = [
   },
   
   {
-    name: "learn-node",
+    name: "Getting-Started-with-AI-A-Beginners-Guide",
     title: "Getting Started with AI: A Beginner's Guide",
     thumbnail: "/images/BlogImages/Ai.gif",
     content: [
@@ -30,7 +30,7 @@ const articles = [
   }
   ,
   {
-    name: "my-thoughts-on-learning-react",
+    name: "Why-NVIDIA-Excels-A-Comparative-Analysis",
     title: "Why NVIDIA Excels: A Comparative Analysis",
     thumbnail: "/images/BlogImages/Nvidia.jpg",
     content: [
@@ -45,7 +45,7 @@ const articles = [
   }
   ,
   {
-    name: "my-thoughts-on-learning-react",
+    name: "Exploring-the-Potential-of-Blockchain-Technology",
     title: "Exploring the Potential of Blockchain Technology",
     thumbnail: "/images/BlogImages/Blockchain.jpg",
     content: [
@@ -61,7 +61,7 @@ const articles = [
   }
   ,
   {
-    name: "my-thoughts-on-learning-react",
+    name: "Demystifying-ReactJS-A-Beginners-Guide",
     title: "Demystifying ReactJS: A Beginner's Guide",
     thumbnail: "/images/BlogImages/React.jpg",
     content: [
@@ -76,7 +76,7 @@ const articles = [
   }
   ,
   {
-    name: "my-thoughts-on-learning-react",
+    name: "Exploring-the-Potential-of-Apple-Vision-Pro",
     title: "Exploring the Potential of Apple Vision Pro",
     thumbnail: "/images/BlogImages/AppleVisionPro.jpg",
     content: [

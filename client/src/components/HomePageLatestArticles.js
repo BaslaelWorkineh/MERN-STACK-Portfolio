@@ -1,9 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext} from 'react';
 import './HomePageLatestArticles.css';
 import articleContent from '../pages/article-content'; // Import article content from articlecontent.js
  // Import article content from articlecontent.js
+ import { ThemeContext } from '../components/ThemeContext';
 
+
+    
 const HomePageLatestArticles = () => {
+    const { theme } = useContext(ThemeContext);
+    
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const firstThreeArticles = articleContent.slice(0, 2); // Slice the array to get the first three articles
 
@@ -33,9 +38,9 @@ const HomePageLatestArticles = () => {
         <>
             <div className='latestNewsArticleContainer'>
                 {firstThreeArticles.map((article, index) => (
-                    <div className='latestNewsArticle' key={index}>
+                    <div className='latestNewsArticle' key={index}  >
                         <h1>{article.title}</h1>
-                        <h2>{getDisplayText(article.content)}</h2>
+                        <h2 >{getDisplayText(article.content)}</h2>
                     </div>
                 ))}
             </div>

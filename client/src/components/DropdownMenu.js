@@ -1,4 +1,4 @@
-import React, {useContext, useState ,useEffect } from 'react';
+import React, { useContext, useState, useEffect } from 'react';
 import setting from '../pages/Gifs/setting.svg'
 import light from '../pages/Gifs/light.svg'
 import dark from '../pages/Gifs/dark.svg'
@@ -13,13 +13,9 @@ const DropdownMenu = () => {
   const toggleDropdown = () => {
     setIsOpen(!isOpen);
   };
-
   const { theme, setTheme } = useContext(ThemeContext);
-
   const handleOptionClick = (option) => {
-    
 
-    
     if (option === 'Light') {
 
       setTheme(option);
@@ -27,17 +23,13 @@ const DropdownMenu = () => {
 
       setTheme(option);
     }
-
-
     console.log(option); // You can handle the option click here
     setIsOpen(false); // Close the dropdown after selecting an option
   };
-
   useEffect(() => {
     // Call handleOptionClick with "Light" option when the component is mounted
-    handleOptionClick("Dark");
+    handleOptionClick("Light");
   }, []); // Empty dependency array ensures this effect runs only once on mount
-
 
   return (
     <li className='setting' onClick={toggleDropdown}>

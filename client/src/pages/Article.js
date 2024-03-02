@@ -49,6 +49,12 @@ const Article = (articles) => {
 
         <div className='underTheMain'>
           <div className='allAboutComment'>
+
+            <div>
+              {articlesInfo.body}
+            </div>
+
+            
             <div className='commentLists'>
               <CommentsList commnets={articlesInfo.comments} />
             </div>
