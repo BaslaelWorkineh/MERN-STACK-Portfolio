@@ -1,8 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useContext, useEffect } from 'react';
 import './About.css';
+import { ThemeContext } from '../components/ThemeContext'
 
 const About = () => {
+  const { theme } = useContext(ThemeContext);
   const [activeSection, setActiveSection] = useState('resume');
+  useEffect(() => {
+    document.body.style.backgroundColor = theme === 'Light' ? '#ffffff' : '#282828';
+  }, [theme]);
 
   return (
     <div className='about-container'>

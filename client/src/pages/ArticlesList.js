@@ -1,4 +1,4 @@
-import React, {useContext} from 'react';
+import React, {useContext, useEffect} from 'react';
 import articleContent from './article-content';
 import hotTopics from './hot-topics';
 
@@ -15,6 +15,10 @@ import { ThemeContext } from '../components/ThemeContext';
 
 const ArticlesList = () => {
   const { theme } = useContext(ThemeContext);
+  
+  useEffect(() => {
+    document.body.style.backgroundColor = theme === 'Light' ? '#ffffff' : '#282828';
+  }, [theme]);
 
   return (
     <>
