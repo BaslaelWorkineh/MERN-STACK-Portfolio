@@ -55,20 +55,23 @@ nav li:first-child {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     display: none;
     flex-direction: column;
-    align-items:center;
-    justify-content: flex-start;
+    align-items: center; /* Updated */
+    justify-content: flex-start; /* Updated */
 }
 
 .sidebar li {
     width: 100%;
+    text-align: center; /* Center-align sidebar items */
+}
+
+.sidebar .close {
+    justify-content: flex-end;
+    padding-right: 20px; /* Push close button to the right */
 }
 
 .menu-button {
     display: none;
     border-radius: 10px;
-}
-.sidebar .close{
-    margin-left: 90%;
 }
 
 .setting img {
@@ -100,14 +103,12 @@ nav li:first-child {
     background-color: #ff6161;
 }
 
-
-.settingMobile .setting {
-    margin-left: 10px;
+.settingMobile{
+    justify-content: start;
+    align-items: center;
 }
-
 .settingMobile .dropdown-menu {
     width: 150px;
-    margin-top: 160px;
     background-color: #fbfbfb;
     
 }
