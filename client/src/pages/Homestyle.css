@@ -13,16 +13,15 @@
 
 /* Customize scrollbar for the body */
 body {
-    width: 101%;
     overflow-y: scroll; /* Enable vertical scrollbar */
-    overflow-x: hidden;
-    
+    overflow-x: hidden; 
 }
 
 /* Customize scrollbar */
 body::-webkit-scrollbar {
     width: 5px; /* Set width of the scrollbar */
     border-radius: 10px; /* Set border radius to make it round */
+   
 }
 
 /* Track */
@@ -265,7 +264,7 @@ ul.brands li.brand-logo img{
 }
 
 .test .box-container .box {
-    border-radius: 10px; /* Rounded corners for a softer look */
+    border-radius: 5px; /* Rounded corners for a softer look */
     text-align: center;
     padding: 40px 30px; /* Increased padding for more space */
     transition: transform 0.3s ease; /* Smooth transition on hover */
@@ -590,6 +589,7 @@ ul.brands li.brand-logo img{
     backdrop-filter: blur(10x);
     display: grid;
     place-items: center;
+    height: 400px;
 }
 .ourServices .ourServicesBox img{
     width: 50px;
@@ -692,6 +692,10 @@ ul.brands li.brand-logo img{
         bottom: -40%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    .ourServices p{
+        font-size: 14px;
+       
     }
     .ourServicesBoxesContainer{
          grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));

@@ -3,9 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-    background: linear-gradient(to bottom,  #ffffff, #ffc2c2);
-}
+
 .blogcontainer{
     display: flex;
     flex-direction: column;

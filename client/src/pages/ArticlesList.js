@@ -18,7 +18,6 @@ const ArticlesList = () => {
 
   return (
     <>
-    <body style={{ background: theme === 'Light' ? 'linear-gradient(to bottom,  #ffffff, #ffc2c2)' : '#282727' }}>
        <div className='blogcontainer'>
         <div className='landingpageBlog'>
           <div className='backgroundImage'></div>
@@ -58,9 +57,6 @@ const ArticlesList = () => {
       </div>
       
       <Footer/>
-
-    </body>
-     
     </>
   );
 };
