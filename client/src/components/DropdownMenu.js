@@ -31,9 +31,9 @@ const DropdownMenu = () => {
     <li className='setting' onMouseEnter={() => setIsOpen(true)} onMouseLeave={() => setIsOpen(false)}>
       <img src={setting} alt="Setting" />
       {isOpen && (
-        <ul className="dropdown-menu">
-          <li><button onClick={() => handleOptionClick("Light")}><img src={light} alt="Light" />Light</button></li>
-          <li><button onClick={() => handleOptionClick("Dark")}><img src={dark} alt="Dark" />Dark</button></li>
+        <ul className="dropdown-menu" style={{ background: theme === 'Light' ? '#f9f9f97b' : '#333' ,borderColor: theme === 'Light' ? '#333' : '#f9f9f97b'}}>
+          <li style={{ color: theme === 'Light' ? 'black' : '#fff'}}><button onClick={() => handleOptionClick("Light")}><div className="darklightbgicons" style={{width:40,height:40,borderRadius:50,padding:5, background:'lightgray'}}><img src={light} alt="Light" /></div>Light</button></li>
+          <li style={{ color: theme === 'Light' ? 'black' : '#fff'}}><button onClick={() => handleOptionClick("Dark")}><div className="darklightbgicons" style={{width:40,height:40,borderRadius:50,padding:5, background:'lightgray'}}><img src={dark} alt="Dark" /></div>Dark</button></li>
         </ul>
       )}
     </li>

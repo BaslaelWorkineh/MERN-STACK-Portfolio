@@ -1,5 +1,4 @@
 nav {
-    background-color: rgba(255, 255, 255, 0.67);
     backdrop-filter: blur(10px);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
@@ -34,10 +33,11 @@ nav a {
     color: black;
 }
 
-nav li:hover {
-    background-color: #f0f0f0;
-
+nav li:not(:last-child):hover {
+    background-color: #cecece;
+    border-radius: 50px;
 }
+
 
 nav li:first-child {
     margin-right: auto;
@@ -106,6 +106,7 @@ nav li:first-child {
     justify-content: start;
     align-items: center;
 }
+
 .settingMobile .dropdown-menu {
     width: 150px;
     background-color: #fbfbfb;
